@@ -12,14 +12,20 @@ public class JpaMain {
         tx.begin();
 
         try {
-//            Member findMember = em.find(Member.class, 1L);
+            // 비영속
+            Member member = new Member();
+            member.setId(101L);
+            member.setName("HelloJPA");
 
-            List<Member> result = em.createQuery("select m from Member as m", Member.class)
-                    .getResultList();
+            // 영속
+            System.out.println("=== BEFORE ===");
+            em.persist(member);
+            System.out.println("=== AFTER ===");
 
-            for (Member member : result) {
-                System.out.println("member.name = " + member.getName());
-            }
+            Member findMember1 = em.find(Member.class, 100L);
+            Member findMember2 = em.find(Member.class, 100L);
+
+            System.out.println(findMember1 == findMember2);
 
             tx.commit();
         } catch (Exception e) {
