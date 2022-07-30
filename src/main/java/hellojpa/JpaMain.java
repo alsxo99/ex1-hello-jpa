@@ -12,10 +12,12 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = new Member(200L, "member200");
+            Member member1 = em.find(Member.class, 150L);
+            member1.setName("ZZZZ");
 
-            em.persist(member);
-            em.flush();
+            em.clear();
+
+            Member member2 = em.find(Member.class, 150L);
 
             System.out.println("======================");
 
