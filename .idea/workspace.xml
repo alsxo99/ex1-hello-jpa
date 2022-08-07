@@ -7,7 +7,7 @@
     <list default="true" id="687f9fee-fbed-48ef-aba6-5cbc6c44bccf" name="Changes" comment="#3 기본 키 (Primary Key) Mapping">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +89,7 @@
       <workItem from="1659679147715" duration="5000" />
       <workItem from="1659680001918" duration="50000" />
       <workItem from="1659795171269" duration="1178000" />
+      <workItem from="1659879828936" duration="2073000" />
     </task>
     <task id="LOCAL-00001" summary="#1 JPA Setting, Basic">
       <created>1659088165070</created>
