@@ -13,6 +13,14 @@ public class JpaMain {
 
         try {
 
+            Movie movie = new Movie();
+            movie.setActor("A");
+            movie.setDirector("B");
+            movie.setName("탑건:매버릭");
+            movie.setPrice(10000);
+
+            em.persist(movie);
+
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
