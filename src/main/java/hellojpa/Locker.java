@@ -9,7 +9,4 @@ public class Locker {
     @Column(name = "LOCKER_ID")
     private Long id;
 
-    @OneToOne(mappedBy = "locker")
-    private Member member;
-
 }
