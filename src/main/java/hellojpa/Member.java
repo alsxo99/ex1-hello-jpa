@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-public class Member extends BaseEntity {
+public class Member {
 
     @Id @GeneratedValue
     @Column(name = "MEMBER_ID")
@@ -20,10 +20,6 @@ public class Member extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "TEAM_ID")
     private Team team;
-
-    @OneToOne
-    @JoinColumn(name = "LOCKER_ID")
-    private Locker locker;
 
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
@@ -54,11 +50,4 @@ public class Member extends BaseEntity {
         this.team = team;
     }
 
-    public Locker getLocker() {
-        return locker;
-    }
-
-    public void setLocker(Locker locker) {
-        this.locker = locker;
-    }
 }
